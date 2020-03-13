@@ -1,7 +1,8 @@
 #+TITLE: 竹内義貴
 #+SUBTITLE: TAKEUCHI YOSHITAKA
-
 #+OPTIONS: toc:nil
+#+OPTIONS: ^:{}
+
 * 趣味
 - 海外旅行(年3回くらいヨーロッパに行きます)
 - 写真(NikonD7100,レンズは50mm/f1.2がメイン？)
@@ -85,7 +86,7 @@ Cisco推しというわけではないのですがヤフオクで集めがち
 - Vue.js
 業務利用経験有り,極めてはいない
 - Elixir-LiveView
-趣味でつかいはじめました。
+趣味でつかいはじめました。おもしろいです。おすすめ。
 ** network
 - 業務で200人程度収容のオフィスネットワークを構築しました。(ルータ:YAMAHA,AP:Cisco,IP電話と遠隔拠点間の接続を含む)
 ** container
@@ -94,6 +95,6 @@ Cisco推しというわけではないのですがヤフオクで集めがち
 - FreeBSD Jail
 趣味,勉強会での環境づくりに利用
 ** 認証,認可
-- Elixirのpaseto(JWTより少し新しいトークンの規格)ライブラリのguardian_pasetoにコントリビューションした。
+- Elixirのpaseto(JWTより少し新しいトークンの規格)ライブラリの[[https://github.com/ueberauth/guardian_paseto/pull/6][guardian_pasetoにコントリビュート]]した。(最近またうごかなくなっているので直したい)
 ** 車
 - 都心に住んでいるのでそんなに乗る機会もなく上手でもないですが、ドライブは好き。
