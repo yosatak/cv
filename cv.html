@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-13 Fri 13:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="yosh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgaa7aff6">1. 趣味</a></li>
+<li><a href="#orgd89b24f">2. 学歴</a></li>
+<li><a href="#orgc3e9f38">3. 職歴</a></li>
+<li><a href="#org2f0f4a8">4. 研究,論文,発表など</a></li>
+<li><a href="#org1c0a1fc">5. 大会成績</a></li>
+<li><a href="#org417a4ec">6. 資格など</a></li>
+<li><a href="#orgbfaf0c0">7. 環境</a>
+<ul>
+<li><a href="#orgf24e375">7.1. computer</a>
+<ul>
+<li><a href="#org1d68df4">7.1.1. machine</a></li>
+<li><a href="#org808abef">7.1.2. OS</a></li>
+<li><a href="#org45150e8">7.1.3. browser</a></li>
+<li><a href="#org82a7de6">7.1.4. home network</a></li>
+</ul>
+</li>
+<li><a href="#org0af30cd">7.2. editor</a></li>
+</ul>
+</li>
+<li><a href="#orgca45c50">8. skill</a>
+<ul>
+<li><a href="#org5b38826">8.1. mail</a></li>
+<li><a href="#org1d517f2">8.2. web-backend</a></li>
+<li><a href="#orgfc5fb8b">8.3. web-frontend</a></li>
+<li><a href="#orga0eb48b">8.4. network</a></li>
+<li><a href="#org9fe070a">8.5. container</a></li>
+<li><a href="#orga27287f">8.6. 認証,認可</a></li>
+<li><a href="#org7af2f73">8.7. 車</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaa7aff6" class="outline-2">
+<h2 id="orgaa7aff6"><span class="section-number-2">1</span> 趣味</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>海外旅行(年3回くらいヨーロッパに行きます)</li>
+<li>写真(NikonD7100,レンズは50mm/f1.2がメイン？)</li>
+<li>プログラミング(shellscript, Elixir, Ruby, PHP)</li>
+<li>インターネット(IPやルーティングについて)</li>
+<li>オンプレでのいろいろやってみること</li>
+<li>お酒</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd89b24f" class="outline-2">
+<h2 id="orgd89b24f"><span class="section-number-2">2</span> 学歴</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>2010/04 藤沢市立鵠沼中学校 入学</li>
+<li>2013/03 藤沢市立鵠沼中学校 卒業</li>
+<li>2013/04 東京工業高等専門学校 入学</li>
+<li>2017/04 東京工業高等専門学校 4年次留年(2週目開始)</li>
+<li>2019/04 東京工業高等専門学校 5年次留年(2週目開始)</li>
+<li>2020/03 東京工業高等専門学校 卒業見込</li>
+<li>2020/04 放送大学 入学見込,単位取得後大学院入学を希望中</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc3e9f38" class="outline-2">
+<h2 id="orgc3e9f38"><span class="section-number-2">3</span> 職歴</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>YYYY/MM company position</li>
+<li>2015/06-2017/03 くまざわ書店 アルバイト</li>
+<li>2017/06-2018/10 トヨタシティーショーケースメガウェブ ライドワン アルバイト</li>
+<li>2018/11-2020/03 (株)終活ねっと エンジニア インターンシップ(業務委託契約)</li>
+<li>2019/04- 獨協医科大学 実験助手</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2f0f4a8" class="outline-2">
+<h2 id="org2f0f4a8"><span class="section-number-2">4</span> 研究,論文,発表など</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>東京工業高等専門学校 卒業研究 BLE Beaconを用いたIoTセンサ情報収集システムの実装</li>
+</ul>
+<p>
+<a href="http://ieicehpb.info/index.php?Kenkyukai21">http://ieicehpb.info/index.php?Kenkyukai21</a> 発表しました
+</p>
+<ul class="org-ul">
+<li>獨協医大,バルセロナ大,他 研究(進行中) 外足靭帯の力学的計測による再建術の有効性の検証 測定器の開発およびデータ分析にて参加 英文論文出版予定</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1c0a1fc" class="outline-2">
+<h2 id="org1c0a1fc"><span class="section-number-2">5</span> 大会成績</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>ICTSC2019 3位 代表者</li>
+<li>東京工業高等専門学校 組み込みマイスター</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org417a4ec" class="outline-2">
+<h2 id="org417a4ec"><span class="section-number-2">6</span> 資格など</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>普通自動車運転免許証</li>
+<li>2018? 基本情報処理技術者</li>
+
+<li>小学生の時 英検8級</li>
+<li>小学生の時 漢検</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbfaf0c0" class="outline-2">
+<h2 id="orgbfaf0c0"><span class="section-number-2">7</span> 環境</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgf24e375" class="outline-3">
+<h3 id="orgf24e375"><span class="section-number-3">7.1</span> computer</h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-org1d68df4" class="outline-4">
+<h4 id="org1d68df4"><span class="section-number-4">7.1.1</span> machine</h4>
+<div class="outline-text-4" id="text-7-1-1">
+<ul class="org-ul">
+<li>Thinkpad x220</li>
+<li>Thinkpad x1 yoga</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org808abef" class="outline-4">
+<h4 id="org808abef"><span class="section-number-4">7.1.2</span> OS</h4>
+<div class="outline-text-4" id="text-7-1-2">
+<ul class="org-ul">
+<li>OpenBSD(メイン)</li>
+<li>FreeBSD(サーバとか)</li>
+<li>Windows(OfficeとDRMなコンテンツを見るとき)</li>
+<li>Linux(業務,たまに*BSDをサポートしていない安プランIaaSを使うとき)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45150e8" class="outline-4">
+<h4 id="org45150e8"><span class="section-number-4">7.1.3</span> browser</h4>
+<div class="outline-text-4" id="text-7-1-3">
+<ul class="org-ul">
+<li>Firefox(PC,Mobile)</li>
+</ul>
+<p>
+モバイルでは実装が追い着いていない感+シェア薄いのですこし不便ですが、利用することはOSSへの貢献だとおもっているので使っています。
+chromeを断固として使わないわけではないです。
+</p>
+</div>
+</div>
+<div id="outline-container-org82a7de6" class="outline-4">
+<h4 id="org82a7de6"><span class="section-number-4">7.1.4</span> home network</h4>
+<div class="outline-text-4" id="text-7-1-4">
+<ul class="org-ul">
+<li>Flets-east</li>
+<li>router: Cisco 841M</li>
+<li>access-point: Cisco 2700</li>
+<li>電話: Cisco 1721(asterisk)</li>
+</ul>
+<p>
+Cisco推しというわけではないのですがヤフオクで集めがち
+他社の機器も導入意欲あり&#x2026;
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0af30cd" class="outline-3">
+<h3 id="org0af30cd"><span class="section-number-3">7.2</span> editor</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>emacs(強い主張はしないのでサーバではvi/vimも使うがそんなに詳しくない)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgca45c50" class="outline-2">
+<h2 id="orgca45c50"><span class="section-number-2">8</span> skill</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org5b38826" class="outline-3">
+<h3 id="org5b38826"><span class="section-number-3">8.1</span> mail</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>OpenSMTPd</li>
+</ul>
+<p>
+メールサーバの構築および実用
+</p>
+</div>
+</div>
+<div id="outline-container-org1d517f2" class="outline-3">
+<h3 id="org1d517f2"><span class="section-number-3">8.2</span> web-backend</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>php,apache,nginx,linux,aws</li>
+</ul>
+<p>
+終活ねっとでの業務利用(月間1000万PV程度)
+</p>
+<ul class="org-ul">
+<li>OpenBSD httpd</li>
+</ul>
+<p>
+趣味で利用 メインのOSがOpenBSDなのでつかってみています。
+</p>
+<ul class="org-ul">
+<li>Elixir,ruby,python</li>
+</ul>
+<p>
+趣味で利用,高専の文化祭でリアルタイム,双方向性のあるシステムを作ったりしました。
+</p>
+</div>
+</div>
+<div id="outline-container-orgfc5fb8b" class="outline-3">
+<h3 id="orgfc5fb8b"><span class="section-number-3">8.3</span> web-frontend</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>Vue.js</li>
+</ul>
+<p>
+業務利用経験有り,極めてはいない
+</p>
+<ul class="org-ul">
+<li>Elixir-LiveView</li>
+</ul>
+<p>
+趣味でつかいはじめました。
+</p>
+</div>
+</div>
+<div id="outline-container-orga0eb48b" class="outline-3">
+<h3 id="orga0eb48b"><span class="section-number-3">8.4</span> network</h3>
+<div class="outline-text-3" id="text-8-4">
+<ul class="org-ul">
+<li>業務で200人程度収容のオフィスネットワークを構築しました。(ルータ:YAMAHA,AP:Cisco,IP電話と遠隔拠点間の接続を含む)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9fe070a" class="outline-3">
+<h3 id="org9fe070a"><span class="section-number-3">8.5</span> container</h3>
+<div class="outline-text-3" id="text-8-5">
+<ul class="org-ul">
+<li>Docker</li>
+</ul>
+<p>
+業務で利用
+</p>
+<ul class="org-ul">
+<li>FreeBSD Jail</li>
+</ul>
+<p>
+趣味,勉強会での環境づくりに利用
+</p>
+</div>
+</div>
+<div id="outline-container-orga27287f" class="outline-3">
+<h3 id="orga27287f"><span class="section-number-3">8.6</span> 認証,認可</h3>
+<div class="outline-text-3" id="text-8-6">
+<ul class="org-ul">
+<li>Elixirのpaseto(JWTより少し新しいトークンの規格)ライブラリのguardian<sub>pasetoにコントリビューションした</sub>。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7af2f73" class="outline-3">
+<h3 id="org7af2f73"><span class="section-number-3">8.7</span> 車</h3>
+<div class="outline-text-3" id="text-8-7">
+<ul class="org-ul">
+<li>都心に住んでいるのでそんなに乗る機会もなく上手でもないですが、ドライブは好き。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: yosh</p>
+<p class="date">Created: 2020-03-13 Fri 13:37</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
