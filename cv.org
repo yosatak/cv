@@ -1,3 +1,7 @@
+#+TITLE: 竹内義貴
+#+SUBTITLE: TAKEUCHI YOSHITAKA
+
+#+OPTIONS: toc:nil
 * 趣味
 - 海外旅行(年3回くらいヨーロッパに行きます)
 - 写真(NikonD7100,レンズは50mm/f1.2がメイン？)
